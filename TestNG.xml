@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Search Engine Automation" parallel="tests" thread-count="3">
+    <listeners>
+        <listener class-name="com.utils.listeners.TestListener"/>
+    </listeners>
+    <test name="Search Validation - google">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="engine" value="google"/>
+        <classes>
+            <class name="com.tests.SearchTest"/>
+        </classes>
+    </test>
+    <test name="Search Validation - bing">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="engine" value="bing"/>
+        <classes>
+            <class name="com.tests.SearchTest"/>
+        </classes>
+    </test>
+    <test name="Search Validation - yahoo">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="engine" value="yahoo"/>
+        <classes>
+            <class name="com.tests.SearchTest"/>
+        </classes>
+    </test>
+</suite>

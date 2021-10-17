@@ -1,0 +1,7 @@
+{
+  "SearchEngines": {
+    "google": "https://google.com/",
+    "bing": "https://www.bing.com/",
+    "yahoo": "http://yahoo.com/"
+  }
+}
